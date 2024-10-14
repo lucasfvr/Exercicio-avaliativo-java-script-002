@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPW - BIM 1 - Exercícios 002</title>
+</head>
+<body>
+    <h1>LPW - BIM 1 - Exercícios 002</h1>
+    <hr>
+    
+    <!--Exercicio 1-->
+    <p><strong>1)</strong> Faça um algoritmo para calcular  <strong>V = &pi;.R <sup>2</sup>.h</strong>, onde R e h deverão ser lidos.</p>
+    <br>
+
+    <label for="rex1">Insira o valor de <strong>R</strong>: </label>
+    <input type="number" id="rex1"><br>
+    <label for="hex1">Insira o valor de <strong>h</strong></label>
+    <input type="number" id="hex1"><br>
+
+    <button onclick="calcularex1()"><strong>Calcular</strong></button>
+    <p id="resex1"><strong>Resultado:</strong></p>
+    <br>
+    <hr>
+
+    <!--Exercicio 2-->
+    <p><strong>2)</strong> Faça um algoritmo para calcular  <strong>A = 4.&pi;.R <sup>2</sup></strong> e <strong> V = ( 4.&pi;.R<sup>3</sup> )/3</strong>, onde R deverá ser lido.</p>
+
+    <label for="rex2a">Insira o valor de <strong>R</strong> para calcular A: </label>
+    <input type="number" id="rex2a"><br>
+    <label for="rex2v">Insira o valor de <strong>R</strong> para calcular V: </label>
+    <input type="number" id="rex2v"><br><br>
+
+    <button onclick="calcularex2()"><strong>Calcular</strong></button><br>
+
+    <p id="resex2"><strong>Resultado: </strong></p>
+    <br>
+    <hr>
+
+    <!--Exercicio 3-->
+    <p><strong>3)</strong> Fazer um algoritmo que leia o nome, cargo e salário de dois funcionários. Em seguida, calcule o reajuste salarial de 20% em cima de cada salário e a média salarial, depois de reajustados, desses dois funcionários lidos.</p>
+
+    <h3>Funcionário 1</h3>
+    <label for="f1ex3">Insira o nome do primeiro funcionário: </label>
+    <input type="text" id="f1ex3"><br>
+    <label for="ca1ex3">Insira o cargo do primeiro funcionário: </label>
+    <input type="text" id="ca1ex3"><br>
+    <label for="sl1ex3">Insira o valor do salário do priemiro funcionário: </label>
+    <input type="number" id="sl1ex3"><br>
+
+    <h3>Funcionário 2</h3>
+    <label for="f2ex3">Insira o nome do segundo funcionário: </label>
+    <input type="text" id="f2ex3"><br>
+    <label for="ca1ex3">Insira o cargo do segundo funcionário: </label>
+    <input type="text" id="ca2ex3"><br>
+    <label for="sl2ex3">Insira o valor do salário do segundo funcionário: </label>
+    <input type="number" id="sl2ex3"><br><br>
+
+    <button onclick="calcularex3()"><strong>Calcular</strong></button><br>
+
+    <p id="resex3"><strong>Resultado:</strong></p>
+    <br>
+    <hr>
+
+    <!--Exercicio 4-->
+    <p><strong>4)</strong> Faça um algoritmo que leia a altura e sexo de três pessoas. Em seguida, calcule e imprima a média das alturas lidas deste grupo de pessoas.</p>
+
+    <h3>Usuário 1</h3>
+    <label for="al1ex4">Insira a altura do usuário 1(sem ultilizar ponto ou vírgula): </label>
+    <input type="number" id="al1ex4"><br>
+    <label for="sx1ex4">Insira o sexo do usuário 1(<strong>H</strong> se for homem e <strong>M</strong> se for mulher): </label>
+    <input type="text" id="sx1ex4"><br>
+
+    <h3>Usuário 2</h3>
+    <label for="al2ex4">Insira a altura do usuário 2(sem ultilizar ponto ou virgula): </label>
+    <input type="number" id="al2ex4"><br>
+    <label for="sx2ex4">Insira o sexo do usuário 2(<strong>H</strong> se for homem e <strong>M</strong> se for mulher): </label>
+    <input type="text" id="sx2ex4"><br><br>
+
+    <button onclick="calcularex4()"><strong>Calcular</strong></button><br>
+
+    <p id="resex4"><strong>Resultado:</strong></p>
+    <br>
+    <hr>
+
+    <!--Exercicio 5-->
+    <p><strong>5)</strong> Faça um algoritmo que leia o nome, a idade e sexo de 4 pessoas. Em seguida, calcule e imprima a média das idades lidas deste grupo de indivíduos.</p>
+
+    <h3>Usuário 1</h3>
+    <label for="n1ex5">Insira o nome do primeiro usuário: </label>
+    <input type="text" id="n1ex5"><br>
+    <label for="id1ex5">Insira a idade do primeiro usuário: </label>
+    <input type="number" id="id1ex5"><br>
+    <label for="sx1ex5">Insira o sexo do primeiro usuário(<strong>H</strong> para homem e <strong>M</strong> para mulher): </label>
+    <input type="text" id="sx1ex5">
+
+    <h3>Usuário 2</h3>
+    <label for="n2ex5">Insira o nome do segundo usuário: </label>
+    <input type="text" id="n2ex5"><br>
+    <label for="id2ex5">Insira a idade do segundo usuário: </label>
+    <input type="number" id="id2ex5"><br>
+    <label for="sx2ex5">Insira o sexo do segundo usuário(<strong>H</strong> para homem e <strong>M</strong> para mulher): </label>
+    <input type="text" id="sx2ex5">
+
+    <h3>Usuário 3</h3>
+    <label for="n3ex5">Insira o nome do terceiro usuário: </label>
+    <input type="text" id="n3ex5"><br>
+    <label for="id3ex5">Insira a idade do terceiro usuário: </label>
+    <input type="number" id="id3ex5"><br>
+    <label for="sx3ex5">Insira o sexo do terceiro usuário(<strong>H</strong> para homem e <strong>M</strong> para mulher): </label>
+    <input type="text" id="sx3ex5">
+
+    <h3>Usuário 4</h3>
+    <label for="n4ex5">Insira o nome do quarto usuário: </label>
+    <input type="text" id="n4ex5"><br>
+    <label for="id4ex5">Insira a idade do quarto usuário: </label>
+    <input type="number" id="id4ex5"><br>
+    <label for="sx4ex5">Insira o sexo do quarto usuário(<strong>H</strong> para homem e <strong>M</strong> para mulher): </label>
+    <input type="text" id="sx4ex5"><br><br>
+
+    <button onclick="calcularex5()"><strong>Calcular</strong></button>
+
+    <p id="resex5"><strong>Resultado:</strong></p><br>
+    <hr>
+    <p><strong>Desenvolvido por Lucas Fernandes Machado de Souza - Matricula: 202420621</strong></p>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
